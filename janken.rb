@@ -48,7 +48,7 @@ def janken
   end
 
 end  
-  janken
+  
 
 def last_game
 
@@ -73,7 +73,7 @@ def last_game
   elsif ($result_janken == "lose" && program_direction == my_direction)
     puts "lose..."
     exit
-    
+
   #勝敗がつかない場合  
   else 
     puts "もう一度じゃんけん"
@@ -81,7 +81,7 @@ def last_game
   end
 
 end
-last_game
+
 
 def game
   if janken == true
@@ -97,6 +97,9 @@ end
     
 next_game = true
 
-while next_game 
+while next_game
   next_game = game
+
 end
+janken
+last_game
